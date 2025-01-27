@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              green: {
+                500: "#C4F82A",
+              },
+              gray: {
+                700: "#333333",
+                800: "#1F1F1F",
+                900: "#141414",
+              },
+            },
+            fontFamily: {
+              figtree: ["Inter", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        @font-face {
+          font-family: Inter;
+          font-weight: 500;
+          src: url("./assets/fonts/static/Inter-Regular.ttf") format("ttf");
+        }
+        @font-face {
+          font-family: Inter;
+          font-weight: 700;
+          src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("ttf");
+        }
+        @font-face {
+          font-family: Inter;
+          font-weight: 800;
+          src: url("./assets/fonts/static/Inter-Bold.ttf") format("ttf");
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white px-6 w-full h-screen grid place-items-center">
+    <section class="grid place-items-center p-6 sm:p-10 max-w-[456px] lg:max-w-96 gap-6 bg-gray-800 rounded-xl w-full">
+      <div id="avatar" class="w-[88px] h-[88px]">
+        <img
+          src="./assets/images/avatar-jessica.jpeg"
+          alt=""
+          class="rounded-full"
+        />
+      </div>
+      <div id="personal-info">
+        <div class="text-2xl leading-normal font-bold mb-1">Jessica Randall</div>
+        <div class="text-sm leading-normal font-bold text-green-500">London, United Kingdom</div>
+      </div>
+      <div id="description" class="text-sm leading-normal">"Front-end developer and avid reader."</div>
+      <div id="socials" class="grid w-full gap-4 ">
+        <button class="bg-gray-700 rounded-lg h-[45px] transition-all duration-500 font-bold hover:bg-green-500 hover:text-gray-700">Github</button>
+        <button class="bg-gray-700 rounded-lg h-[45px] transition-all duration-500 font-bold hover:bg-green-500 hover:text-gray-700">Frontend Mentor</button>
+        <button class="bg-gray-700 rounded-lg h-[45px] transition-all duration-500 font-bold hover:bg-green-500 hover:text-gray-700">LinkedIn</button>
+        <button class="bg-gray-700 rounded-lg h-[45px] transition-all duration-500 font-bold hover:bg-green-500 hover:text-gray-700">Twitter</button>
+        <button class="bg-gray-700 rounded-lg h-[45px] transition-all duration-500 font-bold hover:bg-green-500 hover:text-gray-700">Instagram</button>
+      </div>
+    </section>
+  </body>
+</html>
